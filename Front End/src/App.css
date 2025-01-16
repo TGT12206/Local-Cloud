@@ -1,0 +1,77 @@
+:root {
+  --background-color: #15171C;
+  --page-color: #1b1d24;
+  --text-color: #FFFFFF;
+  --text-select-color: #15171C;
+  --item-color: #15171C;
+  --item-select-color: #0a0b0e;
+  --accent-color: #deb76c;
+  --accent-select-color: #ae8d50;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 10vh;
+}
+
+.page-container {
+  display: grid;
+  width: 90%;
+  padding: 1vh;
+  text-align: left;
+  background-color: var(--page-color);
+  border-top: 1vh solid var(--accent-color);
+  border-radius: 1vh;
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+}
+
+hr {
+  width: 100%;
+}
+
+.file_input {
+  background-color: rgb(31, 32, 41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1vh;
+  height: 60vh;
+}
+
+button {
+  width: 15vh;
+  height: 3vh;
+  background-color: var(--accent-color);
+  transition: 300ms;
+  border-radius: 1vh;
+  border-color: var(--accent-color);
+}
+button:hover {
+  background-color: var(--accent-select-color);
+  border-color: var(--accent-select-color);
+  cursor: pointer;
+}
+.item {
+  width: 30vh;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--item-color);
+  transition: 300ms;
+  border-radius: 1vh;
+}
+.item:hover {
+  background-color: var(--item-select-color);
+  cursor: pointer;
+}
